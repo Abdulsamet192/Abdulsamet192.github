@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap İle Metin Biçimlendirme</title>
+    
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.js">
+    
+    <link rel="stylesheet" href="css/extra.css">
+
+    <style>
+        body {
+            background-image: url(22.jpg);
+            background-repeat: repeat;
+        }
+
+
+
+        .baslık {
+            font-size: 50px;
+            text-shadow: 2px 2px 3px white;
+        }
+
+
+
+        .grs {
+            font-size: 20px;
+            border-style: solid;
+
+            margin: 50px;
+            border-radius: 10px;
+        }
+
+
+
+        .baslık1 {
+            font-size: 25px;
+            text-shadow: 2px 2px 3px white;
+            margin: 50px;
+        }
+
+
+
+        .baslık2 {
+            font-size: 15px;
+            text-shadow: 2px 2px 3px white;
+            margin: 50px;
+            color: darkgreen;
+            border-style: solid;
+            border-radius: 10px;
+
+        }
+
+
+
+        .foto {
+            margin: 10px;
+            border-radius: 50px;
+        }
+
+
+
+        .alt {
+            color: white;
+        }
+
+
+
+        .fotolar {
+            border-radius: 10px;
+        }
+
+        .kody {
+            font-size: 18px;
+        }
+
+        .kody {
+            color: brown;
+            font-weight: 250px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .grss {
+            font-size: 25px;
+        }
+    </style>
+
+
+
+</head>
+
+
+
+<body>
+    <header>
+        <center><a href="https://getbootstrap.com/" target="blank"><img class="foto" src="boo.jpg" alt="foto" width="350px"></a>
+        </center>
+        <div class="baslık">
+            <strong>
+                <p class="text-center">BOOTSTRAP İLE METİN BİÇİMLENDİRME YÖNTEMLERİ</p>
+            </strong>
+        </div>
+    </header>
+
+    <div class="grs">
+
+        <p>Bootstrap web geliştirmek için kullanılan bir araç takımı sistemidir. Bu sistemde belirli olan kütüphane
+            ve etiketleri kullanarak sizlere sağlamış oluğu özellikleri kullanabilirsiniz ve web sayfanızı daha
+            kullanılır ve göze hitap eden bir sayfa yapabilirsiniz. Bu araç takımını eski Twitter çalışanları olan Mark Otto ve
+            Jacob Thornton tarafından oluşturulmuştur. Bu bölümde ise bu araçların özelliklerinden olan
+            metin biçimlendirme yöntemlerini bu web sitesi üzerinden örnekler ve görseller ile anlatacağım.
+            Öncelikle bu araç eklentisini kullanabilmek için kütüphaneyi indirip kurmanız lazım. O yüzden
+            <a href=" https://getbootstrap.com/" target="blank">Bootstrap</a> bağlantısına tıklayarak gerekli dosyaları
+            indirebilirsiniz.
+        </p>
+    </div>
+
+
+    <div class="baslık2">
+        <h3 class="start">Bootstrap Nedir?</h3>
+        <center>
+            <p>
+                Bootstrap, kullanılabilir kod parçalarından oluşan açık kaynaklı ve ücretsiz bir web uygulaması
+                geliştirme araç takımıdır.
+                Sahip olduğu CSS ve JavaScript taslakları, web sitelerinin ve mobil uygulamaların kullanıcılara görünen
+                bileşenleri için kullanılır.
+            </p>
+
+        </center>
+
+
+
+
+    </div>
+
+    <div class="baslık2">
+        <h3 class="start">Kütüphane Nasıl Kurulur?</h3>
+        <center>
+            <p class="grss">Kütüphaneyi kullanabilmek için vermiş olduğum linkten dosyaları indiriniz.</p>
+            <img class="fotolar" src="22.png" alt="kod" width="350px">
+            <p class="grss">Dosyayı indirdikten sonra rar dosyasındaki dosyaları dışarı çıkarıp kodlarınızın yazılı
+                olduğu klasöre ekliyorsunuz.</p>
+            <img class="fotolar" src="23.png" alt="kod" width="350px">
+            <p class="grss">Şimdide kodunuzu yazdıpınız derleyicide head kısmına vermiş olduğum kütüphane uzantılarını
+                ekliyorsunuz ve eklentileriniz çalışacaktır.</p>
+
+            <xmp>
+             
+<link rel="stylesheet"href="boostrapmin.css">
+<link rel="stylesheet"href="boostrapmin.js">
+<link rel="stylesheet"href="css/extra.css">
+            </xmp>
+
+        </center>
+
+
+
+    </div>
+
+
+    <div class="baslık1">
+        <strong>
+            <p class="text-start"> Metin Rengi İçin Kullanılabilecek Sınıflar:</p>
+        </strong>
+        <i>Buradaki renk özellikleri kullanarak sayfanızdaki kelimlere kullanım amacına yönelik daha vurgulu hale
+            getirebilirsiniz.</i>
+    </div>
+
+
+
+
+    <center>
+        <div class="grs text-warning">
+            <p> Class içine text-warning yazarak elde edilecek renk.</p> 
+            <center>
+                <xmp>
+<div class="grs text-warning">
+                         </div>
+                </xmp>
+            </center>
+        </div>
+        <div class="grs text-primary">
+            <p> Class içine text-primary yazarak elde edilecek renk.</p>
+            <center>
+                <xmp>
+<div class="grs text-primary">
+                         </div>
+                </xmp>
+            </center>
+        </div>
+        <div class="grs text-info">
+            <p> Class içine text-info yazarak elde edilecek renk.</p>
+            <center>
+                <xmp>
+<div class="grs text-info">
+                     </div>
+                </xmp>
+            </center>
+        </div>
+        <div class="grs text-danger">
+            <p> Class içine text-danger yazarak elde edilecek renk.</p>
+            <center>
+                <xmp>
+<div class="grs text-danger">
+                        </div>
+                </xmp>
+            </center>
+        </div>
+
+        <div class="grs text-success">
+            <p> Class içine text-success yazarak elde edilecek renk.</p>
+            <center>
+                <xmp>
+<div class="grs text-success">
+                         </div>
+                </xmp>
+            </center>
+        </div>
+        <div class="grs text-secondary">
+            <p> Class içine text-secondary yazarak elde edilecek renk.</p>
+            <center>
+                <xmp>
+<div class="grs text-secondary">
+                           </div>
+                </xmp>
+            </center>
+        </div>
+        <div class="grs text-dark">
+            <p> Class içine text-dark yazarak elde edilecek renk.</p>
+            <center>
+                <xmp>
+<div class="grs text-dark">
+                      </div>
+                </xmp>
+            </center>
+        </div>
+        <div class="grs text-muted">
+            <p> Class içine text-muted yazarak elde edilecek renk.</p>
+            <center>
+                <xmp>
+<div class="grs text-muted">
+                       </div>
+                </xmp>
+            </center>
+
+        </div>
+        <div class="grs text-light ">
+            <p> Class içine text-light yazarak elde edilecek renk.</p>
+            <center>
+                <xmp>
+<div class="grs text-light ">
+                        </div>
+                </xmp>
+            </center>
+        </div>
+        <div class="grs text-white">
+            <p> Class içine text-white yazarak elde edilecek renk.</p>
+            <center>
+                <xmp>
+<div class="grs text-white">
+                       </div>
+                </xmp>
+            </center>
+        </div>
+    </center>
+
+
+
+    <div class="baslık1">
+        <strong>
+            <p class="text-start"> Metin Arka Plan İçin Kullanılabilecek Sınıflar:</p>
+        </strong>
+        <i>Buradaki renk özellikleri kullanarak sayfanızda ayrı kutular oluşturulur</i>
+    </div>
+
+
+
+    <center>
+        <div class="grs bg-primary">
+            <p> Class içine bg-primary yazarak elde edilecek renk. </p>
+            </h5>
+            </p>
+            
+            <center>
+                <p class="kodyy">
+                    <xmp>
+<div class="grs bg-primary">
+<p> Class içine bg-primary yazarak 
+    elde edilecek renk.</p>
+                        </div>
+                    </xmp>
+                </p>
+            </center>
+
+        </div>
+
+        <div class="grs bg-secondary">
+            <p> Class içine bg-secondary yazarak elde edilecek renk.</p>
+            <center>
+                <p class="kodyy">
+                    <xmp>
+<div class="grs bg-secondary">
+<p> Class içine bg-secondary
+yazarak elde edilecek renk.</p>
+</div>
+                    </xmp>
+                </p>
+            </center>
+        </div>
+
+        <div class="grs bg-success">
+            <p> Class içine bg-succsess yazarak elde edilecek renk.</p>
+            <center>
+                <p class="kodyy">
+                    <xmp>
+<div class="grs bg-success">
+<p>Class içine bg-succsess
+yazarak elde edilecek renk.</p>
+</div>
+                    </xmp>
+                </p>
+            </center>
+        </div>
+
+        <div class="grs bg-danger">
+            <p> Class içine bg-danger yazarak elde edilecek renk.</p>
+            <center>
+                <p class="kodyy">
+                    <xmp>
+<div class="grs bg-danger">
+<p>Class içine bg-danger
+yazarak elde edilecek renk.</p>
+</div>
+                    </xmp>
+                </p>
+            </center>
+        </div>
+
+        <div class="grs bg-info ">
+            <p> Class içine bg-info yazarak elde edilecek renk.</p>
+            <center>
+                <p class="kodyy">
+                    <xmp>
+<div class="grs bg-info ">
+<p> Class içine bg-info
+yazarak elde edilecek renk.</p>
+</div>
+                    </xmp>
+                </p>
+            </center>
+        </div>
+
+        <div class="grs bg-warning">
+            <p> Class içine bg-warning yazarak elde edilecek renk.</p>
+
+            <center>
+                <p class="kodyy">
+                    <xmp>
+<div class="grs bg-warning">
+<p> Class içine bg-warning
+yazarak elde edilecek renk.</p>
+</div>
+                    </xmp>
+                </p>
+            </center>
+        </div>
+    </center>
+
+
+
+
+    <div class="baslık1">
+        <strong>
+            <p class="text-start"> Metin İçinde Kullanılan Yazı Özellikleri</p>
+        </strong>
+        <i>Metin içinde farklı amaçlara yönelik olarak kullanılabilecek özelliklerde etiketler.</i>
+    </div>
+
+
+
+
+    <div class="baslık2">
+        <h5>
+            <p class="text-start">-Small Etiketi: Başlık etiketlerinin içinde kullanılarak ikincil bir metin eklememizi
+                sağlar. <br>
+                Örnek: <small>Metin küçüldü.</small>
+                <center><img class="fotolar" src="2.png" alt="kod">
+            </p>
+        </h5>
+        </center>
+
+        <center>
+            <p class="kody">
+                <xmp><small>Metin küçüldü.</small></xmp>
+            </p>
+        </center>
+    </div>
+
+
+
+
+    <div class="baslık2">
+        <h5>
+            <p class="text-start">-Mark Etiketi: Metni dolgu rengi ile vurgulamakta kullanılır. <br> <br>
+                Örnek: <mark>Metin vurgulandı.</mark>
+               
+            </p>
+        </h5>
+        
+
+
+        <center>
+            <p class="kody">
+                <xmp><mark>Metin vurgulandı.</mark></xmp>
+            </p>
+        </center>
+    </div>
+
+
+
+
+    <div class="baslık2">
+        <h5>
+            <p class="text-start">-Blockquote ve Footer Etiketi: Blockquote bir içeriği alıntılayarak göstermekte
+                kullanılır. Footer etiketi ile de kaynak belirtilebilir.
+                Alıntı yapmak için Blockquote etiketi. <br>
+            <pre>
+    <blockquote>https://github.com/</blockquote>
+    <footer>https://github.com/</footer>
+    </pre>
+             </p>
+        </h5>
+        
+
+        <center>
+            <p class="kody">
+                <xmp>
+<blockquote>https://github.com/</blockquote>
+                               
+<footer>https://github.com/</footer>
+                </xmp>
+            </p>
+        </center>
+
+
+
+
+
+    </div>
+
+
+
+
+    <div class="baslık2">
+        <h5>
+            <p class="text-start">-Code Etiketi: Yazılan metni kod stili ile yazar. <br>
+                Örnek: <code>Bu bir koddur.</code>
+                
+            </p>
+        </h5>
+        
+
+        <center>
+<p class="kody">
+<xmp> <code>Bu bir koddur.</code></xmp>
+                             </p>
+        </center>
+    </div>
+
+
+
+
+    <div class="baslık2">
+        <h5>
+            <p class="text-start">-Kbd Etiketi: ctrl + alt + del ile sayfadan çıkabilirsiniz.<br>
+                Örnek: <kbd>Çıkmak için ctrl+alt+del.</kbd>
+            
+            </p>
+        </h5>
+        
+
+        <center>
+            <p class="kody">
+                <xmp> <kbd>Çıkmak için ctrl+alt+del.</kbd></xmp>
+            </p>
+        </center>
+    </div>
+
+
+
+
+    <div class="baslık2">
+        <h5>
+            <p class="text-start">-Pre Etiketi: Metni dolgu rengi ile vurgulamakta kullanılır.<br>
+                Örnek:
+            <pre>
+        Genelde şiir tarzı alt 
+        alta sıralı metinler 
+        için kullanılır.
+        Görüntü bu şekülde olur. 
+                </pre>
+             </p>
+        </h5>
+        
+        <center>
+            <p class="kody">
+<xmp>
+<pre>
+Genelde şiir tarzı alt alta sıralı
+metinler için kullanılır. 
+Görüntü bu şekülde olur.
+</pre>
+</xmp>
+
+
+            </p>
+        </center>
+
+    </div>
+
+
+
+
+    <div class="baslık2">
+        <h5>
+            <p class="text-start">-Small class: Uygulandığı metni normal halinden %85 daha küçük hale getirir.<br>
+                Örnek:
+            <p>Burası normal metin.</p>
+            <p class="small">Burası %85 daha ufak metin.</p>
+             </p>
+        </h5>
+        </center>
+
+
+        <center>
+            <p class="kody">
+                <xmp>
+<p>Burası normal metin.</p> 
+<p class="small">Burası %85 daha ufak metin.
+                                        </p>
+                </xmp></p>
+        </center>
+    </div>
+
+
+
+
+    <div class="baslık2">
+        <h5>
+            <p class="text-start">-Metin Hizalamada Kullanılan Sınıflar: Metinleri sağa, sola, ortaya ve iki yana
+                hizalamak için kullanılan css class'ları:<br>
+                Örnek:
+            <p class="text-center">
+                Burası .text-center sınıfı uygulanmış bir p etiketi.</p>
+            <p class="text-left">
+                Burası .text-left sınıfı uygulanmış bir p etiketi.</p>
+            <p class="text-right">
+                Burası .text-right sınıfı uygulanmış bir p etiketi.</p>
+            <p class="text-justify">
+                Burası .text-justify sınıfı uygulanmış bir p etiketi.</p>
+            <p class="text-end">
+                Burası .text-end sınıfı uygulanmış bir p etiketi.</p>
+            <p class="text-center">
+                Burası .text-center sınıfı uygulanmış bir p etiketi.</p>
+            <p class="text-start">
+                Burası .text-start sınıfı uygulanmış bir p etiketi.</p>
+            </p>
+        </h5>
+        
+
+        <center>
+            <p class="kody">
+                <xmp>
+<p class="text-center">
+.text-center</p> 
+<p class="text-left"> 
+.text-left</p> 
+<p class="text-right"> <br>
+.text-right</p> 
+<p class="text-justify"> 
+.text-justify</p> 
+<p class="text-end">
+.text-end</p> 
+<p class="text-center">
+.text-center</p>
+<p class="text-start"> 
+.text-start</p>
+                </xmp>
+            </p>
+        </center>
+
+
+
+
+
+    </div>
+
+
+
+
+    <div class="baslık2">
+        <h5>
+            <p class="text-start">-Metin Hizalamada Kullanılan Sınıflar: Metinleri ekran boyutuna göre kullanmak
+                istediğimiz zaman kod içinde değişiklik yaparak ekran boyutuna göre konumlandırabiliriz.:<br>
+                Örnek:
+            <p class="text-start text-lg-center text-xxl-end">
+                Burası metin konumlandırma komutları uygulanmış bir p etiketi.</p>
+             </p>
+        </h5>
+        
+        <center>
+            <p class="kody">
+                <xmp>
+<p class="text-start text-lg-center">
+Burası metin konumlandırma komutları 
+uygulanmış bir p etiketi.</p>
+                </xmp>
+            </p>
+        </center>
+
+    </div>
+
+
+
+
+    <div class="baslık2">
+        <h5>
+            <p class="text-start">-Text-nowrap class: Metnin bulunduğu yere sığmadığında bile alta geçmesini
+                engelleyerek, tek satır halinde kalmasını sağlar.<br>
+                Örnek:
+            <p class="text-nowrap">
+                text.nowrap sınıfı uygulanmış bir paragraf. <br>
+                Ekranı küçülterek deneyebilirsiniz.</p>
+             </p>
+        </h5>
+        
+
+        <center>
+            <p class="kody">
+
+                <xmp>
+<p class="text-nowrap"> 
+text.nowrap sınıfı uygulanmış bir 
+paragraf.Ekranı küçülterek
+deneyebilirsiniz.</p>
+                </xmp>
+            </p>
+        </center>
+    </div>
+
+
+    <div class="baslık2">
+        <h5>
+            <p class="text-start">-Büyük-Küçük Harf Dönüşümleri: Metnin tamamının büyük, tamamının küçük ya da
+                kelimelerin ilk harflerinin büyük görünmesini sağlayan sınıflar:<br>
+                Örnek:
+            <p class="text-lowercase">
+                .text-lowercase sınıfı ile bu metindeki tüm harfler küçük harf olarak görünüyor.</p>
+            <p class="text-uppercase">
+                .TEXT-UPPERCASE SINIFI İLE BU METİNDEKİ TÜM HARFLER BÜYÜK HARF OLARAK GÖRÜNÜYOR.</p>
+            <p class="text-capitalize">
+                .Text-Capitalize Sınıfı Ile Bu Metindeki Kelimelerin Ilk Harfleri Büyük Harf Olarak Görünüyor.</p>
+             </p>
+        </h5>
+        
+        <p>
+
+            <center>
+                <xmp>
+<p class="text-lowercase"> 
+küçük harf olarak görünüyor.</p> 
+<p class="text-uppercase"> 
+BÜYÜK HARF OLARAK GÖRÜNÜYOR.</p>
+<p class="text-capitalize"> 
+Büyük Harf olarak Görünüyor.</p>
+                </xmp>
+           </center>
+        </p>
+
+
+
+
+
+
+
+    </div>
+
+    <div class="baslık2">
+        <h5>
+            <p class="text-start">-List-unstyled class: Ol ve ul etiketleri ile oluşturulan listelerde, satır
+                başlarındaki numara - işaretleri ve sol margini kaldırır. Aşağıda bir ul listesi görüyorsunuz.<br>
+                Örnek:
+                <center>
+                    <ul class="list-unstyled">
+                        <li>
+                            Madde 1</li>
+                        <li>
+                            Madde 2</li>
+                        <li>
+                            Madde 3</li>
+                    </ul> 
+            </p>
+        </h5>
+        </center>
+        <center>
+            <xmp>
+
+<ul class="list-unstyled">
+<li>Madde 1</li>
+<li>Madde 2</li>
+<li>Madde 3</li></p>
+</xmp>
+</center>
+</div>
+
+
+
+
+
+
+    <div class="baslık2">
+        <h5>
+            <p class="text-start">-List-inline class: Sıralı ve sırasız listelerde (ol-ul) tüm elemanların yan yana
+                yerleşmesini sağlar. Aşağıda bir ul listesi bulunmakta ve tüm elemanları yan yana görünmektedir.<br>
+                Örnek:
+                <center>
+
+                    <ul class="list-inline">
+                        <li>
+                            Madde 1</li>
+                        <li>
+                            Madde 2</li>
+                        <li>
+                            Madde 3</li>
+                    </ul> 
+            </p>
+        </h5>
+        </center>
+
+        <center>
+
+            <p class="kody">
+                <xmp>
+<ul class="list-inline"> <br>
+<li>Madde 1</li>
+<li> Madde 2</li>
+<li> Madde 3</li></ul>
+                </xmp>
+            </p>
+
+        </center>
+
+
+
+
+
+    </div>
+
+    <div class="baslık2">
+        <h5>
+            <p class="text-start">-Text-break class:Kullanıcıdan yorum alındığında kullanıcı fazla metin girerse metni
+                kırarak aşağı satıra geçirir.<br>
+                Örnek:
+           
+                text.break sınıfı uygulanmış bir paragraf.Ekranı küçülterek deneyebilirsiniz.text.break sınıfı
+                uygulanmış bir paragraf.Ekranı küçülterek deneyebilirsiniz.text.break sınıfı uygulanmış bir
+                paragraf.Ekranı küçülterek deneyebilirsiniz.</p>
+             
+               <xmp> <p class="text-break"></p></xmp>
+        
+    </div>
+
+
+    <div class="baslık2">
+        <h5>
+            <p class="text-start">-Font-size: Bootstrap özelliği kullanarak başlık boyutlarını ayarlayabiliriz. <br>
+                Örnek: <center>
+                    <p class="fs-1">Boyut</p>
+                    <p class="fs-2">Boyut</p>
+                    <p class="fs-3">Boyut</p>
+                    <p class="fs-4">Boyut</p>
+                    <p class="fs-5">Boyut</p>
+                    <p class="fs-6">Boyut</p>  </p>
+        </h5>
+        </center>
+
+        <center>
+
+            <p class="kody">
+                <xmp>
+<p class="fs-1">Boyut</p>
+<p class="fs-2">Boyut</p>
+<p class="fs-3">Boyut</p>
+<p class="fs-4">Boyut</p>
+<p class="fs-5">Boyut</p>
+<p class="fs-6">Boyut</p>
+                </xmp>
+            </p>
+
+        </center>
+
+
+
+
+
+
+    </div>
+
+
+    <div class="baslık2">
+        <h5>
+            <p class="text-start">-Font-weight classları: Bootstrap özelliği kullanarak yazı kalınlıklarını
+                ayarlayabiliriz. <br>
+                Örnek: <center>
+                    <p class="fw-bold">Boyut</p>
+                    <p class="fw-bolder">Boyut</p>
+                    <p class="fw-light">Boyut</p>
+                    <p class="fw-lighter">Boyut</p>
+                    <p class="fw-normal">Boyut</p>  </p>
+        </h5>
+        </center>
+
+        <center>
+      <p class="kody">
+                <xmp>
+<p class="fw-bold">Boyut</p>
+<p class="fw-bolder">Boyut</p>
+<p class="fw-light">Boyut</p>
+<p class="fw-lighter">Boyut</p>
+<p class="fw-normal">Boyut</p>
+                </xmp>
+            </p>
+        </center>
+
+
+    </div>
+
+    <div class="baslık2">
+        <h5>
+            <p class="text-start">-Text-muted : Bootstrap özelliği kullanarak linki sıfırlayabiliriz . <br>
+                <center>
+                    <p class="text-muted">
+                        Muted text with a <a href="#" class="text-reset">reset link</a>.
+                    </p>
+                    
+
+                    <p class="kody">
+                        <xmp>
+<p class="text-muted">
+  Linki sıfırla
+  <a href="#" class="text-reset">
+                reset link</a></p>
+                        </xmp>
+                    </p>
+        </h5>
+        </center>
+    </div>
+
+
+    <div class="baslık2">
+        <center>
+            <h5>
+                <p class="text-start">-Text-wrap : Metni text-wrap ile sarmak. <br>
+                <div class="badge bg-primary text-wrap" style="width: 6rem;">
+                    Metni text-wrap ile sarmak.
+                </div>
+            </h5>
+            
+
+            <p class="kody">
+
+                <xmp>
+<div class="badge bg-primary text-wrap"
+                   style="width: 6rem;">
+                </xmp>
+            </p>
+        </center>
+    </div>
+
+
+    <div class="baslık2">
+        <center>
+            <h5>
+                <p class="text-start">-Satır Yüksekliği: Satır arası boşlukları ayarlanır. <br>
+                <p class="lh-1">Bootstrap web geliştirmek için kullanılan bir araç takımı sistemidir. Bu sistemde belirli olan kütüphane
+                    ve etiketleri kullanarak sizlere sağlamış oluğu özellikleri kullanabilirsiniz ve web sayfanızı daha
+                    kullanılır ve göze hitap eden bir sayfa yapabilirsiniz.</p>
+                <p class="lh-sm">Bootstrap web geliştirmek için kullanılan bir araç takımı sistemidir. Bu sistemde belirli olan kütüphane
+                    ve etiketleri kullanarak sizlere sağlamış oluğu özellikleri kullanabilirsiniz ve web sayfanızı daha
+                    kullanılır ve göze hitap eden bir sayfa yapabilirsiniz.</p>
+                <p class="lh-base">Bootstrap web geliştirmek için kullanılan bir araç takımı sistemidir. Bu sistemde belirli olan kütüphane
+                    ve etiketleri kullanarak sizlere sağlamış oluğu özellikleri kullanabilirsiniz ve web sayfanızı daha
+                    kullanılır ve göze hitap eden bir sayfa yapabilirsiniz.</p>
+                <p class="lh-lg">Bootstrap web geliştirmek için kullanılan bir araç takımı sistemidir. Bu sistemde belirli olan kütüphane
+                    ve etiketleri kullanarak sizlere sağlamış oluğu özellikleri kullanabilirsiniz ve web sayfanızı daha
+                    kullanılır ve göze hitap eden bir sayfa yapabilirsiniz.</p>
+            </h5>
+          
+
+            <p class="kody">
+
+                <xmp>
+<p class="lh-1">Bootstrap web geliştirmek
+için kullanılan bir araç takımı sistemidir.
+                                       </p>
+
+<p class="lh-sm">Bootstrap web geliştirmek
+için kullanılan bir araç takımı sistemidir.
+                                       </p>
+
+<p class="lh-base">Bootstrap web geliştirmek
+için kullanılan bir araç takımı sistemidir.
+                                       </p> 
+
+<p class="lh-lg">Bootstrap web geliştirmek
+için kullanılan bir araç takımı sistemidir.
+                                       </p>
+                </xmp>
+            </p>
+        </center>
+    </div>
+
+    <div class="baslık2">
+        <center>
+            <h5>
+<p class="text-start">-Monospace : Bir seçimi tek aralıklı yazı tipi yığınımıza ile değiştirin. <br>
+<p class="font-monospace">This is in monospace</p>
+            </h5>
+          
+
+            <p class="kody">
+
+                <xmp>
+<p class="font-monospace">Monospace</p>
+                </xmp>
+
+
+            </p>
+        </center>
+    </div>
+    <div class="baslık2">
+        <center>
+            <h5>
+                <p class="text-start">-Metin Dekorasyonu: Metin dekorasyon sınıfları ile bileşenlerdeki metni süsleyin.
+                    <br>
+                <p class="text-decoration-underline">Deneme metni.</p>
+                <p class="text-decoration-line-through">Deneme metni.</p>
+                <a href="#" class="text-decoration-none">Deneme metni.</a>
+            </h5>
+           <center>
+         
+
+            <p class="kody">
+
+                <xmp>
+<p class="text-decoration-underline">
+    Deneme metni.</p>
+<p class="text-decoration-line-through">
+    Deneme metni.</p>
+<a href="#" class="text-decoration-none">
+    Deneme metni.</a>
+                </xmp>
+
+            </p>
+           </center>
+        </center>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="bg-dark text-lıght">
+        <footer class="container py-5 mt-5">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <h5 class="alt">Metin Biçimlendirme Özellikleri</h5>
+                    <small class="d-block mb-3 text-muted">© 2021-2022</small>
+                </div>
+                <div class="col-6 col-md">
+                    <center>
+                        <h4 class="alt">Abdul Samet Alınmış</h4>
+                        <h6 class="alt">21430070046</h6>
+                        <h6 class="alt">Bilişim Sistemleri ve Teknolojileri</h6>
+                        <h6 class="alt"><a href="https://www.linkedin.com/in/abdulsametalnms/">Linkedin Hesabım</a></h6>
+                        <h6 class="alt"><a href="https://github.com/Abdulsamet192">Github Hesabım </a></h6>
+                    </center>
+
+                </div>
+                <div>
+                    <center><a href="https://www.linkedin.com/in/abdulsametalnms/"><img class="fotolar" src="A.S.A.jpg"
+                                margin: 50px; width="250px" alt="logom"></a></center>
+                </div>
+        </footer>
+
+
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
